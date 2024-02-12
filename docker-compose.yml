@@ -1,0 +1,10 @@
+version: "3.7"
+services:
+  tour-of-heroes:
+    build: .
+    ports:
+      - "4200:4200"
+      - "49153:49153"
+    volumes:
+      - "/tour-of-heroes/node_modules"
+      - ".:/tour-of-heroes"
